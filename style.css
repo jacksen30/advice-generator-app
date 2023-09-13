@@ -121,7 +121,7 @@ main {
     position: relative;
     flex-direction: column;
     background-color: hsl(217, 19%, 24%);
-    max-width: 90%;
+    width: 90%;
     padding: 25px;
     border-radius: 10px;
 }
@@ -157,4 +157,24 @@ main {
     border: none;
     padding: 13px;
     border-radius: 100%;
+}
+
+
+@media screen and (min-width: 500px) {
+
+    .quote-container {
+        width: 500px;
+    }
+
+    .quote-container__divider--mobile {
+        display: none;
+    }
+    
+    .quote-container__divider--desktop {
+        display: block;
+    }
+
+    .quote-container__button:hover {
+    
+    }
 }
