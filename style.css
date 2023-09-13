@@ -98,7 +98,9 @@ The element will be visually hidden but will still be read by screen reader tech
 }
 
 .flex {
-  display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Divs & Containers */
@@ -106,29 +108,53 @@ The element will be visually hidden but will still be read by screen reader tech
 body {
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     background-color: hsl(218, 23%, 16%);
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Outfit', sans-serif;
 }
 
 .quote-container {
+    position: relative;
+    flex-direction: column;
     background-color: hsl(217, 19%, 24%);
+    max-width: 90%;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-.title-text {
+.quote-container__title {
+    font-size: 1rem;
     color: hsl(150, 100%, 66%);
+    margin-bottom: 20px;
 }
 
-.quote-text {
+.quote-container__quote {
     color: hsl(193, 38%, 86%);
     font-size: 26px;
+    text-align: center;
+}
+
+.quote-container__divider {
+    margin: 20px 0;
+}
+
+.quote-container__divider--mobile {
+    display: block;
+}
+
+.quote-container__divider--desktop {
+    display: none;
+}
+
+.quote-container__button {
+    position: absolute;
+    bottom: -25px;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    padding: 13px;
+    border-radius: 100%;
 }
