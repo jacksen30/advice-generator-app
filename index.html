@@ -18,11 +18,11 @@
 <body class="flex">
   <main class="flex">
     <div class="quote-container flex">
-      <h1 class="quote-container__title">Advice #<span id="idP"></span><!-- Advice ID goes here --></h1>
-      <h2 id="quote-text" class="quote-container__quote">Loading a new quote...<!-- Advice text goes here --></h2>
+      <h1 class="quote-container__title"><span id="dynamicId"></span></h1>
+      <h2 id="dynamicQuote" class="quote-container__quote">Loading a new quote...</h2>
       <img class="quote-container__divider quote-container__divider--mobile" src="./images/pattern-divider-mobile.svg" alt="">
       <img class="quote-container__divider quote-container__divider--desktop" src="./images/pattern-divider-desktop.svg" alt="">
-      <button class="quote-container__button">
+      <button id="updateQuoteBtn" class="quote-container__button">
         <img class="dice" src="./images/icon-dice.svg" alt="">
       </button>
 
